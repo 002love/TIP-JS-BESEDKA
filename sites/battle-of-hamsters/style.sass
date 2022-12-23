@@ -1,0 +1,179 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html,
+body
+    height: 100%
+
+body
+    background: #202020
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.prize
+    width: 100%
+    height: 100%
+    backdrop-filter: blur(50px)
+    -webkit-backdrop-filter: blur(9px)
+    position: absolute
+    z-index: 1
+    color: white
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .text
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 30%
+        span
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 50px
+            color: white
+            font-family: Arial, Helvetica, sans-serif
+            font-weight: 700
+            font-size: 4.2rem
+    .img
+        height: 50%
+
+.container
+    width: 1000px
+    height: 600px
+    box-shadow:
+    border: 5px solid white
+    border-radius: 20px
+    position: relative
+    overflow: hidden
+    animation: glow-inset 1s infinite
+
+.button
+    padding: 15px 30px
+    font-size: 30px
+    background: red
+    border: 5px solid black
+    border-radius: 15px
+    margin-bottom: 10px
+    font-weight: bold
+
+.hamster
+    width: 75px
+    height: 75px
+    background: rgb(121, 75, 14)
+    border: 5px solid black
+    border-radius: 20px
+    position: absolute
+    transition: 1s
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.GG
+    animation: end 5s linear
+
+@keyframes end
+    0%
+        transform: rotate(-15deg)
+    5%
+        transform: rotate(30deg)
+    10%
+        transform: rotate(-30deg)
+    15%
+        transform: rotate(30deg)
+    20%
+        transform: rotate(-30deg)
+    25%
+        transform: rotate(30deg)
+    30%
+        transform: rotate(-30deg)
+    35%
+        transform: rotate(30deg)
+    40%
+        transform: rotate(-30deg)
+    45%
+        transform: rotate(30deg)
+    50%
+        transform: rotate(-30deg)
+    55%
+        transform: rotate(30deg)
+    60%
+        transform: rotate(-30deg)
+    65%
+        transform: rotate(30deg)
+    70%
+        transform: rotate(-30deg)
+    75%
+        transform: rotate(30deg)
+    80%
+        transform: rotate(-15deg)
+    100%
+        top: 800px
+
+#neonShadow
+    height: 70px
+    width: 200px
+    border: none
+    border-radius: 50px
+    transition: 0.3s
+    background-color: rgba(156, 161, 160,0.3)
+    animation: glow 1s infinite
+    transition: 0.5s
+    margin-bottom: 50px
+    cursor: pointer
+    span
+        display: block
+        width: 100%
+        height: 100%
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: 700
+        font-size: 1.2rem
+        transition: 0.3s
+        opacity: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+            transition: 0.3s
+            opacity: 1
+            font-weight: 700
+
+#neonShadow:hover
+    transform: translateX(-20px)rotate(30deg)
+    border-radius: 5px
+    background-color: #c3bacc
+    transition: 0.5s
+
+@keyframes glow
+    0%
+        box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(255, 0, 191)
+
+    50%
+        box-shadow: 5px 5px 20px rgb(255, 145, 0),-5px -5px 20px rgb(43, 255, 0)
+
+    100%
+        box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(255, 0, 191)
+
+@keyframes glow-inset
+    0%
+        box-shadow: 0px 0px 20px rgb(93, 52, 168), 0px 0px 20px rgb(255, 0, 191) inset
+
+    50%
+        box-shadow: 0px 0px 20px rgb(255, 145, 0), 0px 0px 20px rgb(43, 255, 0) inset
+
+    100%
+        box-shadow: 0px 0px 20px rgb(93, 52, 168), 0px 0px 20px rgb(255, 0, 191) inset
+
+.moving
+    width: 40%
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.glow-inset
+    animation: glow 1s infinite
