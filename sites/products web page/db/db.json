@@ -1,0 +1,47 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "iPhone",
+        "image": "https://cutewallpaper.org/24/iphone-png-transparent/iphone-7-transparent-png-stickpng.png",
+        "cost": 1000,
+        "quantity": 5
+      },
+      {
+        "id": 2,
+        "name": "MacBook Pro",
+        "image": "https://www.icreatemagazine.nl/app/uploads/2016/06/Sierra-achtergrond-op-El-Capitan-960x576.png",
+        "cost": 1500,
+        "quantity": 3
+      },
+      {
+        "id": 3,
+        "name": "iPad",
+        "image": "https://p.calameoassets.com/151022134531-e288d3176f5d7db6b6aff137ce6cfb82/p1.jpg",
+        "cost": 500,
+        "quantity": 10
+      },
+      {
+        "id": 4,
+        "name": "Apple Watch",
+        "image": "https://w7.pngwing.com/pngs/842/836/png-transparent-apple-watch-series-3-apple-watch-series-2-mockup-s-watch-strap-electronics-gadget-apple-watch.png",
+        "cost": 300,
+        "quantity": 15
+      },
+      {
+        "id": 5,
+        "name": "AirPods",
+        "image": "https://zv-prhost.ru/wp-content/uploads/d/5/e/d5e56b798a36522c61c3d34a708dd1fd.png",
+        "cost": 200,
+        "quantity": 20
+      },
+      {
+        "id": 6,
+        "name": "HomePod",
+        "image": "https://gadgetclick.ru/wa-data/public/shop/products/22/28/2822/images/19164/19164.750x0.jpg",
+        "cost": 350,
+        "quantity": 8
+      }
+    ]
+  }
+  

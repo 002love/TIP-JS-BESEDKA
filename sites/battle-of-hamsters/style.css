@@ -33,9 +33,9 @@ body {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(9px);
   position: absolute;
-  z-index: 1;
+  z-index: 10000;
   color: white;
-  display: none;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
