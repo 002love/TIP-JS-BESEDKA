@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User List</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    ::-webkit-scrollbar{
+      width: 0;
+    }
+
+    body {
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/918/276/60/anime-anime-girls-digital-art-artwork-2d-hd-wallpaper-preview.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 2rem auto;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      transition: all 0.2s ease-in-out;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    li:hover {
+      background-color: #030303;
+      transform: scale(1.01);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .user-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .user-info {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .green-block {
+      background-color: #c7f0db;
+    }
+
+    .red-block {
+      background-color: #ffcccb;
+    }
+
+    .blue-block {
+      background-color: #b3d1ff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>User List</h1>
+  <ul>
+    <% for (let i=0; i < users.length; i++) { %>
+      <li
+        class="<% if (i % 3 === 0) { %>green-block<% } else if (i % 3 === 1) { %>red-block<% } else { %>blue-block<% } %>">
+        <div class="user-name">
+          <%= users[i].name %>
+        </div>
+        <div class="user-info">
+          <%= users[i].age %>, <%= users[i].country %>
+        </div>
+      </li>
+      <% } %>
+  </ul>
+</body>
+
+</html>
